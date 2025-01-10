@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Building Science Flashcards</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        .flashcard {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            width: 300px;
+            height: 150px;
+            margin: 10px auto;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+        }
+
+        .flashcard:hover {
+            transform: scale(1.05);
+        }
+
+        .flashcard .term,
+        .flashcard .definition {
+            display: none;
+        }
+
+        .flashcard .term {
+            display: block;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .flashcard.flipped .term {
+            display: none;
+        }
+
+        .flashcard.flipped .definition {
+            display: block;
+            font-size: 16px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Building Science Flashcards</h1>
+
+    <!-- Flashcards -->
+    <div class="flashcard" onclick="this.classList.toggle('flipped')">
+        <div class="term">Wet Zone</div>
+        <div class="definition">The portion of the wall from the drainage plane to the exterior face, designed to resist rain, snow, and temperature changes.</div>
+    </div>
+
+    <div class="flashcard" onclick="this.classList.toggle('flipped')">
+        <div class="term">Dry Zone</div>
+        <div class="definition">The portion of the wall from the drainage plane to the interior face, not intended for prolonged water exposure.</div>
+    </div>
+
+    <div class="flashcard" onclick="this.classList.toggle('flipped')">
+        <div class="term">Drainage Plane</div>
+        <div class="definition">A barrier within the wall assembly that prevents water and air penetration, separating the wet zone from the dry zone.</div>
+    </div>
+
+    <div class="flashcard" onclick="this.classList.toggle('flipped')">
+        <div class="term">Advective Moisture Flow</div>
+        <div class="definition">Water movement caused by air carrying dissolved water through imperfections in the wall assembly.</div>
+    </div>
+
+    <div class="flashcard" onclick="this.classList.toggle('flipped')">
+        <div class="term">Convective Moisture Flow</div>
+        <div class="definition">Water movement driven by temperature-induced buoyancy differences between warm and cold air.</div>
+    </div>
+
+    <div class="flashcard" onclick="this.classList.toggle('flipped')">
+        <div class="term">Diffusive Moisture Flow</div>
+        <div class="definition">The transfer of moisture through materials, influenced by factors like permeability, pressure, and humidity differentials.</div>
+    </div>
+
+    <div class="flashcard" onclick="this.classList.toggle('flipped')">
+        <div class="term">Wind-Driven Rain</div>
+        <div class="definition">Water penetration caused by the momentum of wind and gravity.</div>
+    </div>
+
+    <div class="flashcard" onclick="this.classList.toggle('flipped')">
+        <div class="term">Gravity Flow</div>
+        <div class="definition">The natural downward movement of water on surfaces, managed by features like shingles and flashing.</div>
+    </div>
+
+    <div class="flashcard" onclick="this.classList.toggle('flipped')">
+        <div class="term">Surface Tension</div>
+        <div class="definition">Cohesion among water molecules causing water to cling to surfaces, addressed by features like drip edges.</div>
+    </div>
+
+    <div class="flashcard" onclick="this.classList.toggle('flipped')">
+        <div class="term">Capillary Action</div>
+        <div class="definition">Moisture absorption through small voids in materials such as concrete, wood, or gypsum.</div>
+    </div>
+
+    <div class="flashcard" onclick="this.classList.toggle('flipped')">
+        <div class="term">Conduction</div>
+        <div class="definition">Heat transfer through direct contact between materials or particles.</div>
+    </div>
+
+    <div class="flashcard" onclick="this.classList.toggle('flipped')">
+        <div class="term">Radiation</div>
+        <div class="definition">Heat transfer through electromagnetic waves between materials not in contact.</div>
+    </div>
+
+    <div class="flashcard" onclick="this.classList.toggle('flipped')">
+        <div class="term">Convection</div>
+        <div class="definition">Heat transfer via circulatory motion of warm and cool air or liquids.</div>
+    </div>
+
+    <div class="flashcard" onclick="this.classList.toggle('flipped')">
+        <div class="term">State Changes</div>
+        <div class="definition">Processes like condensation, evaporation, melting, and freezing that impact building science.</div>
+    </div>
+
+    <div class="flashcard" onclick="this.classList.toggle('flipped')">
+        <div class="term">Mass Walls</div>
+        <div class="definition">Thick, solid walls designed to deflect, absorb, and later evaporate moisture.</div>
+    </div>
+
+    <div class="flashcard" onclick="this.classList.toggle('flipped')">
+        <div class="term">Barrier Walls</div>
+        <div class="definition">Walls that rely on weather-tight cladding to shed water without cavities for drainage.</div>
+    </div>
+
+    <div class="flashcard" onclick="this.classList.toggle('flipped')">
+        <div class="term">Face-Seal EIFS</div>
+        <div class="definition">A system where the lamina acts as the primary barrier to water but lacks cavities for drainage.</div>
+    </div>
+
+    <div class="flashcard" onclick="this.classList.toggle('flipped')">
+        <div class="term">Cavity Walls</div>
+        <div class="definition">Walls with a cavity to allow for drainage and air circulation, managing moisture through evaporation and convection.</div>
+    </div>
+
+    <div class="flashcard" onclick="this.classList.toggle('flipped')">
+        <div class="term">Infiltration & Exfiltration</div>
+        <div class="definition">Uncontrolled air movement into (infiltration) and out of (exfiltration) a building due to ineffective barriers.</div>
+    </div>
+
+    <div class="flashcard" onclick="this.classList.toggle('flipped')">
+        <div class="term">Storage Capacity</div>
+        <div class="definition">The ability of materials in the wet zone to absorb and evaporate moisture without degrading.</div>
+    </div>
+
+    <div class="flashcard" onclick="this.classList.toggle('flipped')">
+        <div class="term">Thermal Barriers</div>
+        <div class="definition">Materials designed to reduce heat transfer, maximizing R-value for insulation.</div>
+    </div>
+</body>
+</html>
