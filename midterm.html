@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Building Science Flashcards</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .flashcard-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .flashcard {
+            width: 220px;
+            height: 220px;
+            background-color: #fff;
+            border: 2px solid #000;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transform-style: preserve-3d;
+            transition: transform 0.5s;
+            margin: 10px;
+        }
+        .flashcard.clicked {
+            transform: rotateY(180deg);
+        }
+        .flashcard .front, .flashcard .back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 14px;
+            padding: 10px;
+            text-align: center;
+            box-sizing: border-box;
+        }
+        .flashcard .front {
+            background-color: #ffcc00;
+        }
+        .flashcard .back {
+            background-color: #e0e0e0;
+            transform: rotateY(180deg);
+            font-size: 12px;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="flashcard-container">
+
+    <!-- Building Envelope and Building Science -->
+    <div class="flashcard">
+        <div class="front">
+            <p>What is the building envelope?</p>
+        </div>
+        <div class="back">
+            <p>The building envelope is the physical barrier that separates the interior and exterior of a building. It includes walls, roofs, floors, windows, and doors, and serves to protect the interior from the elements while contributing to energy efficiency.</p>
+        </div>
+    </div>
+
+    <div class="flashcard">
+        <div class="front">
+            <p>What forces act on a building?</p>
+        </div>
+        <div class="back">
+            <p>Various forces act on a building, including wind, gravity, thermal forces, moisture, seismic forces, and thermal expansion. These forces can impact the building’s structural integrity and durability.</p>
+        </div>
+    </div>
+
+    <!-- Building Science Terminology / Concepts -->
+    <div class="flashcard">
+        <div class="front">
+            <p>What is kinetic moisture flow?</p>
+        </div>
+        <div class="back">
+            <p>Kinetic moisture flow refers to the movement of water vapor from areas of higher vapor pressure to areas of lower vapor pressure.</p>
+        </div>
+    </div>
+
+    <div class="flashcard">
+        <div class="front">
+            <p>What is gravity moisture flow?</p>
+        </div>
+        <div class="back">
+            <p>Gravity moisture flow is the movement of liquid water driven by the force of gravity, typically moving downward through materials.</p>
+        </div>
+    </div>
+
+    <div class="flashcard">
+        <div class="front">
+            <p>What is surface tension?</p>
+        </div>
+        <div class="back">
+            <p>Surface tension is a property of water that causes it to "stick" to surfaces and resist separation.</p>
+        </div>
+    </div>
+
+    <div class="flashcard">
+        <div class="front">
+            <p>What is capillary action?</p>
+        </div>
+        <div class="back">
+            <p>Capillary action is the movement of water within small pores or spaces, such as within porous materials, moving against the force of gravity.</p>
+        </div>
+    </div>
+
+    <div class="flashcard">
+        <div class="front">
+            <p>What is storage capacity?</p>
+        </div>
+        <div class="back">
+            <p>Storage capacity refers to the ability of a material to absorb and hold moisture.</p>
+        </div>
+    </div>
+
+    <div class="flashcard">
+        <div class="front">
+            <p>What is advective moisture flow?</p>
+        </div>
+        <div class="back">
+            <p>Advective moisture flow occurs when moisture is transferred by the movement of air.</p>
+        </div>
+    </div>
+
+    <div class="flashcard">
+        <div class="front">
+            <p>What is convective moisture flow?</p>
+        </div>
+        <div class="back">
+            <p>Convective moisture flow refers to the transfer of moisture through the movement of air masses.</p>
+        </div>
+    </div>
+
+    <div class="flashcard">
+        <div class="front">
+            <p>What is the dew point?</p>
+        </div>
+        <div class="back">
+            <p>The dew point is the temperature at which air becomes saturated with moisture and water vapor condenses into liquid.</p>
+        </div>
+    </div>
+
+    <!-- Heat Flow -->
+    <div class="flashcard">
+        <div class="front">
+            <p>What is conduction?</p>
+        </div>
+        <div class="back">
+            <p>Conduction is the transfer of heat through a material by direct contact, such as heat moving through walls or windows.</p>
+        </div>
+    </div>
+
+    <div class="flashcard">
+        <div class="front">
+            <p>What is convection?</p>
+        </div>
+        <div class="back">
+            <p>Convection is the transfer of heat through the movement of fluids, like air or water.</p>
+        </div>
+    </div>
+
+    <div class="flashcard">
+        <div class="front">
+            <p>What is radiation?</p>
+        </div>
+        <div class="back">
+            <p>Radiation is the transfer of heat through electromagnetic waves, such as heat from the sun.</p>
+        </div>
+    </div>
+
+    <div class="flashcard">
+        <div class="front">
+            <p>What is thermal resistance?</p>
+        </div>
+        <div class="back">
+            <p>Thermal resistance (RSI) measures how well a material resists heat flow, while thermal transmittance (USI or U-value) measures the amount of heat passing through a material.</p>
+        </div>
+    </div>
+
+    <div class="flashcard">
+        <div class="front">
+            <p>What are air films?</p>
+        </div>
+        <div class="back">
+            <p>Air films are thin layers of air near a surface that resist heat flow, helping to improve insulation.</p>
+        </div>
+    </div>
+
+    <div class="flashcard">
+        <div class="front">
+            <p>What is the stack effect?</p>
+        </div>
+        <div class="back">
+            <p>The stack effect is the upward movement of warm air inside a building, leading to air infiltration at lower levels.</p>
+        </div>
+    </div>
+
+    <div class="flashcard">
+        <div class="front">
+            <p>What is thermal bridging?</p>
+        </div>
+        <div class="back">
+            <p>Thermal bridging occurs when heat flows through areas of a building envelope where thermal resistance is low, often due to continuous metal or other materials.</p>
+        </div>
+    </div>
+
+    <!-- State Changes -->
+    <div class="flashcard">
+        <div class="front">
+            <p>What is melting vs freezing?</p>
+        </div>
+        <div class="back">
+            <p>Melting is the transition from solid to liquid, while freezing is the reverse, from liquid to solid.</p>
+        </div>
+    </div>
+
+    <div class="flashcard">
+        <div class="front">
+            <p>What is condensation vs evaporation?</p>
+        </div>
+        <div class="back">
+            <p>Condensation is when water vapor turns into liquid, while evaporation is liquid turning into vapor.</p>
+        </div>
+    </div>
+
+    <div class="flashcard">
+        <div class="front">
+            <p>What is deposition vs sublimation?</p>
+        </div>
+        <div class="back">
+            <p>Deposition is the transition from gas to solid, while sublimation is from solid to gas.</p>
+        </div>
+    </div>
+
+    <!-- Cavity Walls -->
+    <div class="flashcard">
+        <div class="front">
+            <p>What is a drainage plane in a cavity wall?</p>
+        </div>
+        <div class="back">
+            <p>A drainage plane allows water to flow away from the wall assembly, preventing moisture buildup.</p>
+        </div>
+    </div>
+
+    <div class="flashcard">
+        <div class="front">
+            <p>What is the difference between wet and dry zones in a wall?</p>
+        </div>
+        <div class="back">
+            <p>Wet zones accumulate water, while dry zones are less likely to have water exposure.</p>
+        </div>
+    </div>
+
+    <!-- Control Layers -->
+    <div class="flashcard">
+        <div class="front">
+            <p>What is thermal control in building construction?</p>
+        </div>
+        <div class="back">
+            <p>Thermal control refers to managing the flow of heat to maintain a comfortable indoor temperature.</p>
+        </div>
+    </div>
+
+    <div class="flashcard">
+        <div class="front">
+            <p>What is vapour control in building construction?</p>
+        </div>
+        <div class="back">
+            <p>Vapour control manages the movement of moisture in vapor form, preventing condensation inside building materials.</p>
+        </div>
+    </div>
+
+    <div class="flashcard">
+        <div class="front">
+            <p>What is air control in building construction?</p>
+        </div>
+        <div class="back">
+            <p>Air control prevents the unwanted movement of air, which can carry moisture or heat into or out of the building.</p>
+        </div>
+    </div>
+
+    <div class="flashcard">
+        <div class="front">
+            <p>What is water control in building construction?</p>
+        </div>
+        <div class="back">
+            <p>Water control manages the movement of liquid water to prevent moisture damage to building components.</p>
+        </div>
+    </div>
+
+    <div class="flashcard">
+        <div class="front">
+            <p>What is water shedding in building construction?</p>
+        </div>
+        <div class="back">
+            <p>Water shedding refers to the design or techniques used to direct water away from vulnerable parts of the building envelope to prevent water penetration.</p>
+        </div>
+    </div>
+
+    <!-- Wall Types & Moisture Flow -->
+    <div class="flashcard">
+        <div class="front">
+            <p>What are mass walls?</p>
+        </div>
+        <div class="back">
+            <p>Mass walls are thick walls made of heavy materials (like concrete or brick) that absorb and release moisture slowly.</p>
+        </div>
+    </div>
+
+    <div class="flashcard">
+        <div class="front">
+            <p>What are barrier / face-seal walls?</p>
+        </div>
+        <div class="back">
+            <p>Barrier or face-seal walls rely on a continuous waterproof barrier to prevent water from entering the interior.</p>
+        </div>
+    </div>
+
+    <div class="flashcard">
+        <div class="front">
+            <p>What are cavity / rainscreen walls?</p>
+        </div>
+        <div class="back">
+            <p>Cavity or rainscreen walls consist of an outer layer that sheds water, a gap for airflow, and an inner layer that prevents water penetration.</p>
+        </div>
+    </div>
+
+</div>
+
+<script>
+    document.querySelectorAll('.flashcard').forEach(card => {
+        card.addEventListener('click', () => {
+            card.classList.toggle('clicked');
+        });
+    });
+</script>
+
+</body>
+</html>
